@@ -15,14 +15,14 @@ int main(){
     int r;
     int q;
 
-    printf("digite seu RG (com 8 digitos sem pontos ou caracteres), separando-os por espaços: ");
+    printf("digite seu RG (com 8 digitos sem pontos ou caracteres), separando-os por espaÃ§os: ");
     scanf("%d %d %d %d %d %d %d %d", &a, &b, &c, &d, &e, &f, &g, &h);
 
     p = 2*a + 3*b + 4*c + 5*d + 6*e + 7*f + 8*g + 9*h;
     r = p % 11;
     q = 11 - r;
 
-    if(q>=0 && q<=9){
+    if((q>=0) && (q<=9)){
         printf("o numero veriicador eh: %d\n", q);
         }
         else{
